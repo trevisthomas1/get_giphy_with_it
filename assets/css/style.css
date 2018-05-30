@@ -1,0 +1,63 @@
+body {
+    text-align: center !important;
+    font-family: 'Jua', sans-serif !important;
+}
+
+h5, .rating {
+    color: #0061aa !important;
+}
+
+label {
+    color: #0061aa !important;
+    font-size: 1.25em !important;
+    text-decoration: underline;
+}
+
+.row {
+    max-width: 100%;
+}
+
+.jumbotron-fluid {
+    background-color: #0061aa !important;
+    color: whitesmoke;
+    font-weight: bold !important;
+    font-family: 'Jua', sans-serif;
+}
+
+.btn {
+    background-color: #0061aa !important;
+    color: whitesmoke;
+    font-family: 'Jua', sans-serif;
+}
+
+.card {
+    margin-bottom: 5em !important;
+}
+
+.gif-buttons {
+    margin-top: 1em;
+}
+
+.animalBtn {
+    margin: 1px;
+}
+
+.form-group {
+    margin-left: 2em;
+}
+
+.submit {
+    background-color: #8B0000 !important;
+    margin: 1em !important;
+}
+
+.clear {
+    background-color: #58595b !important;
+    margin-bottom: 1em !important;
+}
+
+.item {
+    float: left;
+    position: relative;
+    padding: 5px;
+}

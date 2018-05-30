@@ -8,48 +8,52 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div id="buttons">
-        <button data-person="arnold schwarzenegger">
-            I'll be back.
-        </button>
-        <button data-person="michael j fox">
-            My happiness grows in direct proportion to my acceptance, and in inverse proportion to my expectations.
-        </button>
 
-        <!-- STEP ONE: Open this file in the browser and click on the buttons. Watch what happens -->
-
-        <!-- STEP TWO: between the dashed lines below
-            * add three more buttons
-            * add a data-person attribute of famous people you know
-            * with a quote said by them -->
-
-        <!-- **************************************** -->
-
-        <button data-person="keanu reeves">
-            What are you trying to tell me? That I can dodge bullets?
-        </button>
-        <button data-person="zach galifianakis">
-            Yes, I’ve heard of him. He’s a famous pirate. By the way it’s ‘Shakesbeard’.
-        </button>
-        <button data-person="seth rogen">
-            She doesn’t know that much about drugs, the proportions of this s*** is all off.
-        </button>
-
-        <!-- **************************************** -->
-
-
-        <!-- STEP THREE: open this file in the browser and click on your buttons. If they don't work, then fix your buttons -->
-
-        <!-- STEP FOUR: go over the JavaScript with your partners, and explain the lines of code to each other. -->
-
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">GET GIPHY WITH IT</h1>
+            <p class="lead">Click on a button to get giphy with it! Or create a new button!</p>
+        </div>
     </div>
 
-    <div id="gifs-appear-here">
+    <div class="row">
+
+        <div class="col-md-2"> </div>
+
+        <div class="col-md-8">
+            <div class="card">
+                <h5 class="card-header">Here's a few baby animals to get started.
+                    <br>
+                    <br>Don't forget to add your own! Just type the name of an animal and hit submit.</h5>
+                <div class="card-body">
+                        <div class="gif-buttons"></div>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <label for="exampleFormControlInput1">Add a Gif!</label>
+                                <input type="text" class="form-control text-center" id="animal-input" placeholder="example: penguin">
+                                <button type="submit" id="add-animal" class="btn submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <button class="clear btn" id="clear" data-name="clear">Start Over</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div id="gifs-appear-here"></div>
     </div>
 
     <script type="text/javascript" src="assets/javascript/app.js"></script>
